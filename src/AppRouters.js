@@ -6,8 +6,6 @@ import Search from "./pages/search/Search";
 import Options from "./pages/options/Options";
 import Account from "./pages/account/Account";
 
-
-
 const AppRouters = () => {
     return (
         <Routes>            

@@ -3,15 +3,15 @@ import './NavbarApp.css';
 
 export const NavbarApp = () => {
     return (
-        <Navbar expand="lg" bg='dark' data-bs-theme='dark' className="bg-body-tertiary">
-            <Container>
+        <Navbar expand="lg" bg='dark' data-bs-theme='dark' className="bg-body-tertiary navbar-app">
+            
                 <Navbar.Brand href="/home">WC</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" >
                     <Nav className="me-auto my-2 my-lg-0" navbarScroll >
                         <Nav.Link href="/procurar">Procurar</Nav.Link>                                                               
                     </Nav>                      
-                    <Nav className="me-auto my-2 my-lg-0" navbarScroll > 
+                    <Nav className="my-2 my-lg-0" > 
                         <NavDropdown title="Usuário" id="navUsuario" className='nav-link-color' >
                             <NavDropdown.Item href="/opcoes">Opções</NavDropdown.Item>
                             <NavDropdown.Item href="/conta">Minha conta</NavDropdown.Item>
@@ -20,7 +20,7 @@ export const NavbarApp = () => {
                         </NavDropdown>                    
                     </Nav>            
                 </Navbar.Collapse>
-            </Container>
+            
         </Navbar>
     );
 }

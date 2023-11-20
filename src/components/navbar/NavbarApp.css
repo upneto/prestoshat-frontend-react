@@ -5,3 +5,9 @@
 .nav-link-color-red {
     color: #DE3163;
 }
+
+.navbar-app {
+    margin-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
