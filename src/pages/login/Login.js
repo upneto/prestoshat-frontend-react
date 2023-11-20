@@ -1,11 +1,16 @@
 import './Login.css';
+
 import InputText from '../../components/form/input-text';
 import Button from '../../components/form/button';
 import BannerPrincipal from '../../components/banner';
+
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const Login = () => {
-       
+    
+    const navigate = useNavigate();
+
     const [usuario, setUsuario] = useState('');
     const [senha, setSenha] = useState('');
     
@@ -14,9 +19,11 @@ export const Login = () => {
 
         console.log('Usuario: ' + usuario);
         console.log('Senha: ' + senha);
+
+        navigate('/home');
     };
           
-    return (        
+    return (
         <section>
                                             
             <BannerPrincipal />
@@ -34,4 +41,6 @@ export const Login = () => {
 
         </section>        
     );
-}
+};
+
+export default Login;
