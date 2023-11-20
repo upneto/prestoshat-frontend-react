@@ -2,7 +2,6 @@ import './Login.css';
 import InputText from '../../components/form/input-text';
 import Button from '../../components/form/button';
 import BannerPrincipal from '../../components/banner';
-import FooterPrincipal from '../../components/footer';
 import { useState } from 'react';
 
 export const Login = () => {
@@ -33,7 +32,6 @@ export const Login = () => {
                 </form>
             </div>
 
-            <FooterPrincipal />
         </section>        
     );
 }
