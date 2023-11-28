@@ -36,15 +36,15 @@ const Navbar: React.FC<NavbarProps> = ({
             <label>Comunidade Gamers</label>
           </div>
           <div className="hidden md:flex gap-6">
-            <MenuItem label="Comunidade" onClick={() => router.push('/comunity')} />
-            <MenuItem label="Rankings" onClick={() => router.push('/ranking')} />
-            <MenuItem label="Sobre" onClick={() => router.push('/about')} />
+            <MenuItem label="Comunidade" onClick={() => router.push('/pages/comunity')} />
+            <MenuItem label="Rankings" onClick={() => router.push('/pages/ranking')} />
+            <MenuItem label="Sobre" onClick={() => router.push('/pages/about')} />
             {!currentUser && (
               <MenuItem label="Login" onClick={() => router.push('/dashboard')} />
               )}
             {currentUser && (
               <>
-                <MenuItem label="Minha Coleção" onClick={() => router.push('/colection')} />
+                <MenuItem label="Minha Coleção" onClick={() => router.push('/pages/colection')} />
                 <MenuItem label="Create Post" onClick={() => router.push('/dashboard/posts')} />
                 <MenuItem label="Logout" onClick={() => signOut({ callbackUrl: '/' })} />
               </>

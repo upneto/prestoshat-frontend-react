@@ -1,5 +1,7 @@
 'use client';
 
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+
 const Footer: React.FC = () => {
     return (
       <footer className="bg-gray-800 text-white py-6 mt-10">
@@ -9,11 +11,11 @@ const Footer: React.FC = () => {
               <h3 className="text-lg font-bold mb-2">Links Rápidos</h3>
               <ul>
                 <li><a href="/" className="hover:underline">Início</a></li>
-                <li><a href="/us" className="hover:underline">Sobre nós</a></li>
-                <li><a href="/suport" className="hover:underline">Suporte</a></li>
-                <li><a href="/terms" className="hover:underline">Termos de Uso</a></li>
-                <li><a href="/privacy" className="hover:underline">Política de Privacidade</a></li>
-                <li><a href="/about" className="hover:underline">Contato</a></li>
+                <li><a href="/pages/about" className="hover:underline">Sobre nós</a></li>
+                <li><a href="/pages/suport" className="hover:underline">Suporte</a></li>
+                <li><a href="/pages/terms" className="hover:underline">Termos de Uso</a></li>
+                <li><a href="/pages/privacy" className="hover:underline">Política de Privacidade</a></li>
+                <li><a href="/pages/contact" className="hover:underline">Contato</a></li>
               </ul>
             </div>
             <div>
@@ -22,13 +24,13 @@ const Footer: React.FC = () => {
               <p>Telefone: (11) 1234-5678</p>
               <div className="flex space-x-4 mt-2">
                 <a href="https://facebook.com/seuperfil" target="_blank" rel="noopener noreferrer">
-                  <img src="/icons/facebook-icon.png" alt="Facebook" width="24" height="24" />
+                  <FaFacebookF className="text-white text-2xl" />
                 </a>
                 <a href="https://twitter.com/seuperfil" target="_blank" rel="noopener noreferrer">
-                  <img src="/icons/twitter-icon.png" alt="Twitter" width="24" height="24" />
+                  <FaTwitter className="text-white text-2xl" />
                 </a>
                 <a href="https://linkedin.com/in/seuperfil" target="_blank" rel="noopener noreferrer">
-                  <img src="/icons/linkedin-icon.png" alt="LinkedIn" width="24" height="24" />
+                  <FaLinkedinIn className="text-white text-2xl" />
                 </a>
               </div>
             </div>
@@ -36,7 +38,6 @@ const Footer: React.FC = () => {
         </div>
       </footer>
     );
-  }
-  
-  export default Footer;
-  
+}
+
+export default Footer;
