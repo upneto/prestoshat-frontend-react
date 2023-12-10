@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   prestoshat-frontend:
-    image: mcr.microsoft.com/mcr/prestoshat-frontend:0.0.1
+    image: prestoshat01.azurecr.io/prestoshat-frontend:0.0.1
     container_name: prestoshat-frontend    
     restart: on-failure    
     build:      
