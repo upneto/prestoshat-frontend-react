@@ -1,0 +1,6 @@
+# Path
+/node_modules
+/build
+
+# Archives
+npm-debug.log

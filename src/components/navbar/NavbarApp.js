@@ -3,8 +3,8 @@ import './NavbarApp.css';
 
 export const NavbarApp = () => {
     return (
-        <Navbar expand="lg" bg='dark' data-bs-theme='dark' className="bg-body-tertiary navbar-app">
-            
+        <section>
+            <Navbar expand="lg" bg='dark' data-bs-theme='dark' className="bg-body-tertiary navbar-app">            
                 <Navbar.Brand href="/home">WC</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" >
@@ -19,8 +19,11 @@ export const NavbarApp = () => {
                             <NavDropdown.Item href="/" className='nav-link-color-red' >Sair</NavDropdown.Item>
                         </NavDropdown>                    
                     </Nav>            
-                </Navbar.Collapse>
-            
-        </Navbar>
+                </Navbar.Collapse>            
+            </Navbar>
+
+            <div className='separator' ></div>
+        
+        </section>
     );
 }

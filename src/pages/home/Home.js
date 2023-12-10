@@ -2,7 +2,9 @@
 import './Home.css';
 
 import { NavbarApp } from '../../components/navbar/NavbarApp';
+
 import { Col, Container, Row, Image, Tabs, Tab, Stack, Badge, Button } from 'react-bootstrap';
+
 import ProfileTab from './tabs/profile/ProfileTab';
 import GamesTab from './tabs/games/GamesTab';
 import RatingTab from './tabs/rating/RatingTab';
@@ -12,7 +14,7 @@ export const Home = () => {
     return (        
         <section>
             <NavbarApp />
-
+            
             <Container>
                 <Row className='row' >
                     <Col md="auto" lg="3" >
